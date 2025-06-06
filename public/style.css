@@ -1,0 +1,272 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+  color: #222;
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+header {
+  background: #b30000;
+  padding: 15px 20px;
+  border-radius: 6px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+}
+
+header nav a:hover {
+  opacity: 0.7;
+}
+
+/* HERO */
+.hero {
+  background: #ffe5e5;
+  border-radius: 8px;
+  padding: 30px 25px;
+  text-align: center;
+  margin-bottom: 35px;
+  color: #b30000;
+}
+
+.hero h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* ASSISTENTE */
+.assistente {
+  background: #fafafa;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-bottom: 35px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.assistente p {
+    margin: 10px;
+}
+
+.assistente h3 {
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  color: #b30000;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.input-container input {
+  flex: 1;
+}
+
+.input-container button {
+  background-color: #b30000;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.input-container button:hover {
+  background-color: #800000;
+  transform: scale(1.05);
+}
+
+.input-container button:active {
+  transform: scale(0.98);
+}
+
+
+
+.chatbox {
+  background: #fff;
+  border: 2px solid #b30000;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.mensagens {
+  max-height: 180px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.mensagens div.user {
+  text-align: right;
+  background: #ffe5e5;
+  color: #b30000;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  max-width: 80%;
+}
+
+.mensagens div.bot {
+  text-align: left;
+  background: #e5f4f5;
+  color: #257025;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  max-width: 80%;
+}
+
+.chatbox input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1.5px solid #b30000;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.chatbox input:focus {
+  border-color: #800000;
+}
+
+/* RECURSOS */
+#recursos {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  margin-bottom: 35px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+#recursos h3 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #b30000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#recursos ul {
+  list-style: none;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+#recursos li {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 24px;
+}
+
+#recursos li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #b30000;
+}
+
+/* CONTATOS */
+.contatos {
+  background: #b30000;
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contatos h3 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.contatos ul {
+  list-style: none;
+  padding: 0;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.contatos li {
+  margin-bottom: 12px;
+}
+
+.contatos a {
+  color: #fff;
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+
+.contatos a:hover {
+  opacity: 0.7;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  body {
+    margin: 20px 10px;
+    max-width: 100%;
+  }
+
+  header nav a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p, #recursos ul, .contatos ul {
+    font-size: 15px;
+  }
+
+  .assistente, #recursos, .contatos {
+    padding: 25px 15px;
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SOS Desastres</title>
+</head>
+<body>
+
+    <header>
+        <h1>SOS Desastres</h1>
+        <nav>
+            <a href="#assistente">Fale com a Assistente</a>
+            <a href="#recursos">Recursos úteis</a>
+            <a href="#contatos">Contatos de Ajuda</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Você não está sozinho.</h2>
+        <p>Receba orientações e apoio em situações de emergência.</p>
+    </section>
+
+    <section id="assistente" class="assistente">
+        <h3>Assistente Virtual</h3>
+        <p>Olá Bem-vindo(a), assistente virtual que é capaz de responder, de maneira clara e empática, a perguntas relacionadas a como reagir em situações de desastres naturais</p>
+        <div class="chatbox">
+            <div class="mensagens" id="mensagens"></div>
+            <div class="input-container">
+                <input type="text" id="input" placeholder="Digite sua pergunta ...">
+                <button onclick="enviar()" id="botao">Enviar</button>
+            </div>
+        </div>
+    </section>
+    <section id="recursos">
+        <h3>Recursos que podem te ajudar</h3>
+        <ul>
+            <li><strong>Defesa Civil SP</strong>: Aplicativo oficial que envia alertas.</li>
+            <li><strong>AlertaSP</strong>: Envie seu CEP por SMS para 40199.</li>
+            <li><strong>Climatempo e Cemaden</strong>: Previsão do tempo detalhada.</li>
+            <li><strong>Google Maps</strong>: Pode indicar bloqueios ou mudanças no trânsito em tempo real, caso precise evacuar.</li>
+        </ul>
+    </section>
+    
+    <section id="contatos" class="contatos">
+        <h3>Contatos de ajuda</h3>
+        <ul>
+            <li><strong>Polícia Militar</strong>: 190</li>
+            <li><strong>Bombeiros</strong>: 193</li>
+            <li><strong>SAMU</strong>: 192</li>
+            <li><strong>Defesa Civil</strong>: 199</li>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
